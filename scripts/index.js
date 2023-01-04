@@ -29,6 +29,7 @@ function renderJobs() {
     pJobDescription.innerText = elem.descrition;
     spanJobType.innerText = elem.modalities[0 || 1];
     btnSubscribe.innerText = "Candidatar";
+    btnSubscribe.classList.add("button");
 
     divCard.classList.add("card");
     divCardJobLocal.classList.add("div_card--local");
@@ -103,7 +104,7 @@ function removeJobAppliedByTrash() {
 
       let liJob = elem.parentElement.parentElement;
       let btnSubscribeAll = document.querySelectorAll(".btn_card--subscribe");
-      console.log("test");
+
       btnSubscribeAll.forEach((elem) => {
         let title = elem.parentElement.parentElement.childNodes[0].innerText;
 
