@@ -78,3 +78,9 @@ header span {
     }
 
 }
+
+@media (min-width: 800px) {
+    .p_Description {
+        width: 580px
+    }
+}
